@@ -1,0 +1,8 @@
+program ures
+    integer a;
+    integer b;
+begin
+    read(a);
+    read(b);
+    write((a / b / 23) + 1);
+end

@@ -1,0 +1,10 @@
+program oszto
+  integer num;
+  integer power;
+  integer result;
+begin
+  read(num);
+  read(power);
+  result := num**power;
+  write(result);
+end
