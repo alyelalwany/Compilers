@@ -1,0 +1,10 @@
+1. Beolvasott egészek tárolása tömbben, a tömb tartalmának kiírása.
+->Store scanned integers in an array, print the contents of the array.
+2. Tömbben tárolt számok összegzése.
+->Summarize of numbers stored in an array.
+3. Számlálás karaktertömbben.
+->Counting in a character array.
+4. Maximumkeresés egészek tömbjén.
+->Maximum search on an array of integers.
+5. Nemnegatív egész szám átalakítása szöveggé, 10-es számrendszerben.
+->Convert a non-negative integer to text in a 10-digit number system.
