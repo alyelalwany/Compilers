@@ -1,0 +1,13 @@
+program inc
+    integer x;
+    integer y;
+    integer z;
+begin
+    read(x);
+    for y := x to 2*x do
+        for z := 1 to 5 do
+            write(y);
+	done
+        write(true);
+    done
+end
