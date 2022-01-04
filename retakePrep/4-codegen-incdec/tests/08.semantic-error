@@ -1,7 +1,0 @@
-program negate
-    integer i;
-    boolean b;
-    integer b;
-begin
-    skip;
-end

@@ -1,7 +1,0 @@
-program inc
-    integer x
-begin
-    read(x);
-    x := x+1;
-    write(x);
-end
