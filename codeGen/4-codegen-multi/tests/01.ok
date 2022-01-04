@@ -1,0 +1,6 @@
+program ures
+    integer a;
+begin
+    a := 2;
+    multi a multi 3 write(a);
+end
