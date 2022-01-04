@@ -1,0 +1,7 @@
+program negate
+    integer i;
+    boolean b;
+begin
+    read(i);
+    assert 1+2;
+end
