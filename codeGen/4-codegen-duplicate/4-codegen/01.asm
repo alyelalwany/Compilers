@@ -1,0 +1,55 @@
+global main
+extern read_unsigned, write_unsigned
+extern read_boolean, write_boolean
+segment .bss
+label0: resd 1
+
+segment .text
+main:
+mov eax, 12
+mov [label0], eax
+mov eax, 2
+label1:
+cmp eax, 0
+je label2
+push eax
+mov eax, [label0]
+push eax
+call write_unsigned
+add esp,4
+pop eax
+sub eax, 1
+jmp near label1
+label2:
+mov eax, 2
+label3:
+cmp eax, 0
+je label4
+push eax
+call read_unsigned
+mov [label0], eax
+pop eax
+sub eax, 1
+jmp near label3
+label4:
+mov eax, 2
+label5:
+cmp eax, 0
+je label6
+push eax
+mov eax, 1
+push eax
+mov eax, [label0]
+pop ebx
+add eax, ebx
+mov [label0], eax
+pop eax
+sub eax, 1
+jmp near label5
+label6:
+mov eax, [label0]
+push eax
+call write_unsigned
+add esp,4
+
+ret
