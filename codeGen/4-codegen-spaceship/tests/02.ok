@@ -1,0 +1,10 @@
+program negate
+    integer i;
+    boolean b;
+begin
+    read(i);
+    while ((i<=>23) = 0) do
+        write(i);
+        i:=i+1;
+    done
+end

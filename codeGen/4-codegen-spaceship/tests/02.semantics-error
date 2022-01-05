@@ -1,0 +1,9 @@
+program negate
+    integer i;
+    boolean b;
+begin
+    read(i);
+    if (i<=>23) then 
+        write(i);
+    endif
+end
