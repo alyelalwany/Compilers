@@ -192,7 +192,7 @@ assignment:
             ss << "Undeclared variable: " << *$1 << std::endl;
             error( ss.str().c_str() );
         }
-	if( symbol_table[*$1].is_const && symbol_table[*$1].is_assigned_const)
+	if( symbol_table[*$1].is_const && symbol_table[*$1].is_assigned)
         {
             std::stringstream ss;
             ss << "Variable is constant. Cannot be reassigned. " << *$1 << std::endl;
@@ -204,7 +204,7 @@ assignment:
            ss << d_loc__.first_line << ": Type error." << std::endl;
            error( ss.str().c_str() );
         }
-	symbol_table[*$1].is_assigned_const = true;
+	symbol_table[*$1].is_assigned = true;
         if($3->expr_type == integer)
             $$ = new std::string("" +
                     $3->expr_code +
