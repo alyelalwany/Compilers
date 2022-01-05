@@ -16,6 +16,11 @@ push eax
 pop ebx
 mov eax, 81
 mov [label0+4*eax], ebx
+mov eax, 69
+push eax
+pop ebx
+mov eax, 65
+mov [label0+4*eax], ebx
 mov eax, 81
 mov eax, [label0+eax*4]
 push eax

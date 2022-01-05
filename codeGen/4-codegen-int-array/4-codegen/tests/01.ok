@@ -3,6 +3,7 @@ program ex
 begin
   arr[13] := 37;
   arr[81] := 102;
+  arr[65] := 69;
   write(arr[81]);
   write(arr[arr[80+1] - arr[15-2]]);
   read(arr[23]);
